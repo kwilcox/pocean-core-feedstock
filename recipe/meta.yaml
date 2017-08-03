@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: pocean-core
@@ -7,11 +7,10 @@ package:
 source:
   fn: pocean-core-{{ version }}.tar.gz
   url: https://github.com/pyoceans/pocean-core/archive/{{ version }}.tar.gz
-  sha256: f9e012afd8a12d553f0f64d7badb020ce21bd964e6861ee81d67f7db1f18cc0f
+  sha256: 0008bbd48588e56b9825b798998bc41ead59355f4283c45dec88badea4aa0cb5
 
 build:
   number: 0
-  skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
