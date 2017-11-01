@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.4" %}
 
 package:
   name: pocean-core
@@ -7,7 +7,7 @@ package:
 source:
   fn: pocean-core-{{ version }}.tar.gz
   url: https://github.com/pyoceans/pocean-core/archive/{{ version }}.tar.gz
-  sha256: 0008bbd48588e56b9825b798998bc41ead59355f4283c45dec88badea4aa0cb5
+  sha256: c79e22e92d2660f557a49b11edc9b3efdbda8f660f3aa88c3421b1a3e9f8c090
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python
     - netcdf4
     - numpy
-    - pandas
+    - pandas >=0.21.0
     - pygc >=1.2.0
     - python-dateutil
     - pytz
