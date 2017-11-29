@@ -1,22 +1,22 @@
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 package:
   name: pocean-core
   version: {{ version }}
 
 source:
-  fn: pocean-core-{{ version }}.tar.gz
   url: https://github.com/pyoceans/pocean-core/archive/{{ version }}.tar.gz
-  sha256: 7a4528295a4153d350aed514909e853ce714e8f48abd9a914b9087b9f1203bba
+  sha256: b28632abe0f7454bb075f6e1b6969c15b60949cd41dda8eaf88251baf3ae9f35
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed 
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - netcdf4
