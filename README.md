@@ -14,12 +14,15 @@ Summary: A python framework for working with met-ocean data.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pocean-core-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pocean-core-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pocean-core-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pocean-core-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pocean-core/badges/version.svg)](https://anaconda.org/conda-forge/pocean-core)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pocean-core/badges/downloads.svg)](https://anaconda.org/conda-forge/pocean-core)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pocean--core-green.svg)](https://anaconda.org/conda-forge/pocean-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pocean-core.svg)](https://anaconda.org/conda-forge/pocean-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pocean-core.svg)](https://anaconda.org/conda-forge/pocean-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pocean-core.svg)](https://anaconda.org/conda-forge/pocean-core) |
 
 Installing pocean-core
 ======================
