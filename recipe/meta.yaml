@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 package:
   name: pocean-core
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://github.com/pyoceans/pocean-core/archive/{{ version }}.tar.gz
-  sha256: 2af102a78ce2a629fddf18c82d1c29a9224fb5d7377ac510a9a29bc883efc260
+  sha256: 51e19715b473523157b244c6345d03e7aaf47a95a9af24d3321e196d93815523
 
 build:
-  number: 0
+  number: 1000
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
