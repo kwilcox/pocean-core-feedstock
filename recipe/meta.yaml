@@ -28,6 +28,7 @@ requirements:
     - shapely
     - simplejson
     - six
+    - cftime==1.0.1  # tempfix for real_datetime issue
 
 test:
   source_files:
@@ -39,7 +40,7 @@ test:
     - pocean.dsg
     - pocean.grid
   commands:
-    - py.test -s -rxs -v pocean
+    - pytest -s -rxs -v pocean
 
 about:
   home: https://github.com/axiom-data-science/pocean-core
