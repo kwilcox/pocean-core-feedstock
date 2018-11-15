@@ -1,4 +1,4 @@
-{% set version = "1.4.4" %}
+{% set version = "1.5.0" %}
 
 package:
   name: pocean-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pyoceans/pocean-core/archive/{{ version }}.tar.gz
-  sha256: 51e19715b473523157b244c6345d03e7aaf47a95a9af24d3321e196d93815523
+  sha256: 1d533bc129e17d623e8f3e4ca21ae03c00fbedfb0306ebb40906f4c32b7fe6c5
 
 build:
   number: 1000
@@ -28,6 +28,7 @@ requirements:
     - shapely
     - simplejson
     - six
+    - cftime==1.0.1  # tempfix for real_datetime issue
 
 test:
   source_files:
@@ -39,7 +40,7 @@ test:
     - pocean.dsg
     - pocean.grid
   commands:
-    - py.test -s -rxs -v pocean
+    - pytest -s -rxs -v pocean
 
 about:
   home: https://github.com/axiom-data-science/pocean-core
