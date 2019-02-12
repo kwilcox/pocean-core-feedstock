@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -21,14 +21,14 @@ requirements:
     - python
     - netcdf4
     - numpy >=1.14
-    - pandas >=0.21.0
+    - pandas >=0.24,<0.25
     - pygc >=1.2.0
     - python-dateutil
     - pytz
     - shapely
     - simplejson
     - six
-    - cftime==1.0.1  # tempfix for real_datetime issue
+    - cftime
 
 test:
   source_files:
